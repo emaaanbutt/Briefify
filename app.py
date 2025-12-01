@@ -28,7 +28,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-model_path = "t5-small"
+model_path = "t5-base"
 model = T5ForConditionalGeneration.from_pretrained(model_path)
 tokenizer = T5Tokenizer.from_pretrained(model_path)
 
